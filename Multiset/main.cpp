@@ -1707,11 +1707,11 @@ void test_multiset_multiset_point() {
 int main () {
 
 	test_multiset_int();
-	//test_multiset_double();
-	//test_multiset_string();
-	//test_multiset_point();
-	//test_multiset_person();
-	//test_multiset_multiset_point();
+	test_multiset_double();
+	test_multiset_string();
+	test_multiset_point();
+	test_multiset_person();
+	test_multiset_multiset_point();
 
 	return 0;
 }
