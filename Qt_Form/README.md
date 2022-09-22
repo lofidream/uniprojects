@@ -1,1 +1,3 @@
 Questa repository contiene i file di progetto di un form di iscrizione e login ad un generico social media/servizio online. Il progetto è stato realizzato utilizzando QtCreator e prevede diverse funzionalità a seconda dell'utente. In particolare, gli utenti standard possono iscriversi, effettuare il login e recuperare la password; l'utente admin può effettuare un login particolare, attraverso il quale è in grado di visualizzare l'elenco delle persone iscritte e due grafici di dati.
+
+I file con estensione diversa da .cpp e .h sono prodotti automaticamente da QtCreator. Il file .csv contiene un elenco fittizio di iscritti alla piattaforma, generato tramite test ed utilizzato per test.
