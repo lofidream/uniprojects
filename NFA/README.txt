@@ -1,6 +1,6 @@
 202001 E1P NFA - COMPILAZIONE D'ESPRESSIONI REGOLARI IN AUTOMI NON DETERMINISTICI
 
-Il progetto consisteva nel realizzare un compilatore da regexps ad NFA, con annesse eventuali operazioni ausiliarie.
+Il progetto consisteva nel realizzare un compilatore da regexps ad NFA in linguaggio Prolog, con annesse eventuali operazioni ausiliarie.
 I predicati principali da implementare erano is_regexp/1, nfa_regexp_comp/2, nfa_test/2, nfa_clear/0 ed nfa_clear/1.
 
 SPIEGAZIONE DEI PREDICATI (inclusi gli "ausiliari")
