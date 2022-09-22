@@ -1,6 +1,3 @@
-Bonacina Luca 813632
-Colombo Dugoni Nubia 829729
-
 202001 E1P NFA - COMPILAZIONE D'ESPRESSIONI REGOLARI IN AUTOMI NON DETERMINISTICI
 
 Il progetto consisteva nel realizzare un compilatore da regexps ad NFA, con annesse eventuali operazioni ausiliarie.
