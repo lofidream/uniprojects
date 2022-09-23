@@ -2,18 +2,15 @@
 
 %%%% nfa.pl
 
-%%%% Luca Bonacina, matricola: 813632
-%%%% Nubia Colombo Dugoni, matricola: 829729
-
 %%% is_regexp/2
 
-% caso in cui RE Ë atomico
+% caso in cui RE √® atomico
 
 is_regexp(RE) :-
     atomic(RE),
     !.
 
-% caso in cui RE Ë composto, controllo il "tipo" di RE
+% caso in cui RE √® composto, controllo il "tipo" di RE
 
 is_regexp(RE) :-
     compound(RE),
@@ -22,13 +19,13 @@ is_regexp(RE) :-
 
 %%% reserved_op/2
 
-% caso star e plus, operatori con arit‡ 1
+% caso star e plus, operatori con arit√† 1
 
 reserved_op(star, 1).
 
 reserved_op(plus, 1).
 
-% caso seq e or, operatori con arit‡ diversa da 0
+% caso seq e or, operatori con arit√† diversa da 0
 
 reserved_op(seq, Arity) :-
     Arity \= 0.
@@ -115,7 +112,7 @@ nfa_builder(FA_Id, RE, Initial, Final) :-
     RE =.. [or, R],
     nfa_builder(FA_Id, R, Initial, Final).
 
-% caso or con pi˘ argomenti
+% caso or con pi√π argomenti
 
 nfa_builder(FA_Id, RE, Initial, Final) :-
     RE =.. [or, Arg | Args],
@@ -145,13 +142,13 @@ or_builder(FA_Id, [Arg | Args], Initial, Final) :-
 
 %%% seq_builder/4
 
-% caso in cui la coda della lista Ë vuota
+% caso in cui la coda della lista √® vuota
 
 seq_builder(FA_Id, [Arg | Args], Initial, Final) :-
     Args = [],
     nfa_builder(FA_Id, Arg, Initial, Final).
 
-% caso in cui la coda della lista non Ë vuota
+% caso in cui la coda della lista non √® vuota
 
 seq_builder(FA_Id, [Arg | Args], Initial, Final) :-
     gensym(q, REFinal),
@@ -188,12 +185,12 @@ nfa_test(FA_Id, Input) :-
 
 %%% nfa_forward/3
 
-% la lista input Ë vuota e lo stato corrente Ë quello finale
+% la lista input √® vuota e lo stato corrente √® quello finale
 
 nfa_forward(FA_Id, [], State) :-
     nfa_final(FA_Id, State).
 
-% la lista input Ë vuota, si avanza al nuovo stato con una epsilon-mossa
+% la lista input √® vuota, si avanza al nuovo stato con una epsilon-mossa
 
 nfa_forward(FA_Id, [], State) :-
     nfa_delta(FA_Id, State, epsilon, NewState),
